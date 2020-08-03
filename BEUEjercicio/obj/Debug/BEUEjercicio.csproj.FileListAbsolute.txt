@@ -1,0 +1,13 @@
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\bin\Debug\BEUEjercicio.dll.config
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\bin\Debug\BEUEjercicio.dll
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\bin\Debug\BEUEjercicio.pdb
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\bin\Debug\EntityFramework.dll
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\bin\Debug\EntityFramework.xml
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\obj\Debug\BEUEjercicio.csproj.CoreCompileInputs.cache
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\obj\Debug\BEUEjercicio.csproj.CopyComplete
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\obj\Debug\BEUEjercicio.dll
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\obj\Debug\BEUEjercicio.pdb
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\luis\source\repos\CtrEscolastico\WepApiEscolastico\BEUEjercicio\bin\Debug\Newtonsoft.Json.xml

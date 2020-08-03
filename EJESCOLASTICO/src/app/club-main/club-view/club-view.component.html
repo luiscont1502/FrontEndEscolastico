@@ -1,0 +1,94 @@
+<br>
+<br>
+<div class="container ">
+
+    <div class="d-flex justify-content-around ">
+        <div class="row">
+            <div class="media col-md-4">
+                <div class="media-left">
+                    <fa-icon class="mr-3 fa-2x" [icon]='faIdCard'></fa-icon>
+                </div>
+                <div class="media-body">
+                    <small class="media-heading">Id</small>
+                    <p class="h6"><strong>{{club.id}}</strong></p>
+                </div>
+            </div>
+            <div class="media col-md-4">
+                <div class="media-left">
+                    <fa-icon class="mr-3 fa-2x" [icon]='faUser'></fa-icon>
+                </div>
+                <div class="media-body">
+                    <small class="media-heading">Nombre</small>
+                    <p class="h6"><strong>{{club.nombre }}</strong></p>
+                </div>
+            </div>
+            <div class="media col-md-4">
+                <div class="media-left">
+                    <fa-icon class="mr-3 fa-2x" [icon]='faUser'></fa-icon>
+                </div>
+                <div class="media-body">
+                    <small class="media-heading">Administrador</small>
+                    <p class="h6"><strong>{{club.administrador }}</strong></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="d-flex justify-content-around">
+        <div class="row">
+            <div class="media col-md-4">
+                <div class="media-left">
+                    <fa-icon class="mr-3 fa-2x" [icon]='faTag'></fa-icon>
+                </div>
+                <div class="media-body">
+                    <small class="media-heading">Categoria</small>
+                    <p class="h6"><strong>{{club.categoria }}</strong></p>
+                </div>
+            </div>
+            <div class="media col-md-4">
+                <div class="media-left">
+                    <fa-icon class="mr-3 fa-2x" [icon]='faGenderless'></fa-icon>
+                </div>
+                <div class="media-body">
+                    <small class="media-heading">Edad Máxima</small>
+                    <p class="h6"><strong>{{club.edadMin}}</strong></p>
+                </div>
+            </div>
+            <div class="media col-md-4">
+                <div class="media-left">
+                    <fa-icon class="mr-3 fa-2x" [icon]='faGenderless'></fa-icon>
+                </div>
+                <div class="media-body">
+                    <small class="media-heading">Edad minima</small>
+                    <p class="h6"><strong>{{club.edadMax}}</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-around">
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faLevelUpAlt'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Nivel</small>
+                <p class="h6"><strong>{{club.tipo }}</strong></p>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faFile'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Cupos</small>
+                <p class="h6"><strong>{{club.cupos}}</strong></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+</div>

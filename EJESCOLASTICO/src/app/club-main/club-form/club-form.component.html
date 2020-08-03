@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="text-center">
+        <fa-icon class="fa-2x" [icon]="faUserPlus"></fa-icon>
+    </div>
+    <hr>
+    <h6>{{title}}</h6>
+</div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="user">
+    <div class="card-body">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+          <fa-icon [icon]='faUser'></fa-icon>
+        </span>
+            </div>
+            <input formControlName="nombre" type="text" class="form-control form-control-user" [(ngModel)]="club.nombre" [ngClass]="{'is-invalid': submitted && f.nombre.errors}" placeholder="Nombre" />
+            <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+                <div *ngIf="f.nombre.errors.required">El nombre es requerido</div>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+          <fa-icon [icon]='faUser'></fa-icon>
+        </span>
+            </div>
+            <input formControlName="administrador" type="text" class="form-control form-control-user" [(ngModel)]="club.administrador" [ngClass]="{'is-invalid': submitted && f.administrador.errors}" placeholder="Administrador" />
+            <div *ngIf="submitted && f.administrador.errors" class="invalid-feedback">
+                <div *ngIf="f.administrador.errors.required">El administrador es requerido</div>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+          <fa-icon [icon]='faTag'></fa-icon>
+        </span>
+            </div>
+            <input formControlName="categoria" type="text" class="form-control form-control-user" [(ngModel)]="club.categoria" placeholder="Categoria" />
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+          <fa-icon [icon]='faGenderless'></fa-icon>
+        </span>
+            </div>
+            <input formControlName="edadMin" type="number" class="form-control form-control-user" [(ngModel)]="club.edadMin" placeholder="Edad Minima" />
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+          <fa-icon [icon]='faGenderless'></fa-icon>
+        </span>
+            </div>
+            <input formControlName="edadMax" type="number" class="form-control form-control-user" [(ngModel)]="club.edadMax" placeholder="Edad Maxima" />
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+        <fa-icon [icon]='faLevelUpAlt'></fa-icon>
+      </span>
+            </div>
+            <select formControlName="tipo" [(ngModel)]="club.tipo" [ngClass]="{'is-invalid': submitted && f.tipo.errors }" class="form-control form-control-user">
+            <option value="Principiante">Principiante</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Experto">Experto</option>
+          </select>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+        <fa-icon [icon]='faFile'></fa-icon>
+      </span>
+            </div>
+            <input formControlName="cupos" type="text" class="form-control form-control-user" [(ngModel)]="club.cupos" placeholder="cupos" />
+        </div>
+    </div>
+    <div class="btn-group">
+        <button type="submit" class="btn btn-success">
+      <fa-icon [icon]='faSave'></fa-icon>&nbsp;Guardar
+    </button>
+        <button type="reset" (click)="onReset()" class="btn btn-danger">
+      <fa-icon [icon]='faTimes'></fa-icon>&nbsp;Cancelar
+    </button>
+    </div>
+
+</form>
+<hr>

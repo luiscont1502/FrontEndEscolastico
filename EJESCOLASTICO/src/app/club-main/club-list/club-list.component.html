@@ -1,0 +1,82 @@
+<div>
+    <div class="row">
+        <div class="col-sm">
+            <a class="nav-link " routerLink="crear">
+                <fa-icon [icon]="faPlusCircle"></fa-icon> Crear Club
+            </a>
+        </div>
+        <div class="col-sm">
+            <fa-icon class="fa-2x" [icon]="faListAlt"></fa-icon>
+        </div>
+    </div>
+    <hr>
+
+    <hr>
+    <h5>Listado de Clubs</h5>
+    <table class="table table-hover">
+        <thead class="bg-info">
+            <tr>
+                <th>
+                    N°
+                </th>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Administrador
+                </th>
+                <th>
+                    Categoria
+                </th>
+                <th>
+                    Rango de edad
+                </th>
+                <th>
+                    Nivel
+                </th>
+                <th>
+                    Cupos
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of clubs; let i = index">
+                <td>
+                    {{i | masmas}}
+                </td>
+                <td>
+                    {{item.id}}
+                </td>
+                <td>
+                    {{item.nombre}}
+                </td>
+                <td>
+                    {{item.administrador}}
+                </td>
+                <td>
+                    {{item.categoria}}
+                </td>
+                <td>
+                    {{item.edadMin + " - "+item.edadMax}}
+                </td>
+                <td>
+                    {{item.tipo}}
+                </td>
+                <td>
+                    {{item.cupos}}
+                </td>
+                <td class="btn-group">
+
+                    <button [routerLink]="['/club/ver', item.id]" class="btn btn-sm btn-info"><fa-icon [icon]="faEye"></fa-icon></button>
+                    <button [routerLink]="['/club/crear', item.id]" class="btn btn-sm btn-warning"><fa-icon [icon]="faPencilAlt"></fa-icon></button>
+                    <button (click)="delete(item)" class="btn btn-sm btn-danger"><fa-icon [icon]="faTrash"></fa-icon></button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
